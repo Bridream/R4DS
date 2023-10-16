@@ -1,0 +1,69 @@
+---
+title: "r for data science 1 ggplot2"
+output: html_document
+date: '2022-11-02'
+---
+# Layer and Geometry  
+```{r}
+library("tidyverse")
+ggplot2::mpg
+```
+```{r}
+ggplot(data=mpg)+
+  geom_point(mapping=aes(x=displ, y=hwy, colour=class, shape=displ<5), size=2)
+```
+```{r}
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy), colour='red', size=1.5, shape=20) + 
+  facet_grid(drv ~ cyl)
+```
+```{r}
+ggplot(data=mpg) + 
+  geom_smooth(mapping=aes(x=displ, y=hwy, linetype=drv))
+```
+```{r}
+ggplot(mpg, mapping=aes(x=displ, y=hwy)) + 
+  geom_point(mapping=aes(color=class), show.legend = FALSE) + 
+  geom_smooth(color='orange', se=FALSE, linetype="solid")
+```
+  
+# Theme  
+Using theme{ggplot2} to set the theme of the coordinate system, such as background, grid and etc.  
+  
+# Statistic Transformation  
+```{r}
+ggplot2::diamonds
+```
+```{r}
+ggplot(data=diamonds) + 
+  geom_bar(mapping=aes(x=cut, fill=clarity))
+#default: stat="count", y=..count...
+```
+```{r}
+ggplot(data=diamonds) + 
+  geom_bar(mapping=aes(x=cut, y=..prop.., group=1))
+#use y to map a particular computed statistic variables. arguments 'stat="prop"' doesn't work cause there is no stat_prop function.
+```
+```{r}
+ggplot(data=diamonds) + 
+  stat_summary(
+    mapping=aes(x=cut, y=depth),
+    fun.min=min,
+    fun.max=max,
+    fun=median
+  ) + 
+  stat_summary(
+    mapping=aes(x=cut, y=depth),
+    fun=mean,
+    color="red"
+  )
+```
+  
+# Position and Coordinate System  
+Look help for position_dodge, position_fill, position_identity, position_jitter, position_stack.  
+Use either position=["dodge"] or position=position_dodg() as argument passed on to the geom layer function.  
+  
+Look help for COORDINATE_FUNCTION with keyword "coord_" for details.  
+  
+# The Layered Grammar of Graphics  
+Any plot can be described as a combination of a dataset, a geom, a set of mappings, a stat, a position adjustment, a coordinate system, and a facet scheme.  

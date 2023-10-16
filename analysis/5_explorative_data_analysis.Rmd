@@ -1,0 +1,93 @@
+
+```{r}
+library(tidyverse)
+```
+```{r}
+diamonds %>% 
+  count(cut_width(carat, 0.5, center=0.45))
+```
+```{r}
+diamonds %>% 
+  filter(carat==0.99 | carat==1) %>% 
+  count(carat)
+```
+```{r}
+ggplot(diamonds, mapping=aes(x=cut, y=price)) + 
+  geom_boxplot(outlier.size = 0.2, outlier.alpha = 0.05, outlier.colour = 'red')
+```
+```{r}
+ggplot(diamonds) + 
+  geom_point(mapping=aes(x=carat, y=price, color=cut), size=0.5, alpha=1) + 
+  scale_color_brewer(type=seq, palette='YlGnBu', direction=-1) + 
+  guides(color=guide_legend(override.aes=list(alpha=1, size=2)))
+```
+
+
+```{r}
+ggplot(diamonds, mapping=aes(x=cut, y=carat)) + 
+  geom_boxplot(outlier.size = 0.2, outlier.alpha = 0.5, outlier.colour = 'red')
+```
+```{r}
+diamonds_carat_range<-mutate(
+  diamonds,
+  carat_range=cut_width(diamonds$carat, center=0.7, width=1, closed = 'left'),
+  cut_reorder=factor(diamonds$cut, levels = c('Ideal','Premium','Very Good','Good','Fair'))
+)
+#reorder the level of factor cut on order to arrange them in the inverse order on a axis in the plot.
+(n_carat_cut<-count(diamonds_carat_range, carat_range, cut_reorder))
+```
+
+```{r}
+ggplot(diamonds_carat_range, mapping=aes(x=cut_reorder, y=price)) + 
+  geom_boxplot(outlier.size = 0.2, outlier.alpha = 0.5, outlier.colour = 'red') + 
+  facet_wrap(facets = vars(carat_range), ncol=2, shrink = FALSE, scales = 'free', labeller = 'label_both') + 
+  coord_flip()
+```
+
+```{r}
+diamonds_small<-filter(diamonds_carat_range, carat_range=='[0.2,1.2)')
+
+diamonds_small_carat_range<-mutate(
+  diamonds_small,
+  small_carat_range=cut_width(diamonds_small$carat, center=0.3, width=0.2, closed = 'left')
+)
+```
+
+```{r}
+ggplot(diamonds_small_carat_range, mapping=aes(x=cut_reorder, y=price)) + 
+  geom_boxplot(outlier.size = 0.5, outlier.alpha = 0.5, outlier.colour = 'red') + 
+  facet_wrap(facets = vars(small_carat_range), ncol=2, shrink = FALSE, scales = 'free', labeller = 'label_both') + 
+  coord_flip()
+```
+```{r}
+diamonds_big_carat_range<-filter(diamonds_carat_range, carat_range=='[3.2,4.2)' | carat_range=='[4.2,5.2)')
+
+ggplot(diamonds_big_carat_range, mapping=aes(x=cut, y=price)) + 
+  geom_boxplot()
+```
+```{r}
+ggplot(diamonds_big_carat_range, mapping=aes(x=cut, y=carat)) + 
+  geom_boxplot(outlier.size = 0.2, outlier.alpha = 0.5, outlier.colour = 'red')
+```
+
+```{r}
+ggplot(mpg) + 
+  geom_boxplot(mapping=aes(
+    x=reorder(class, hwy, FUN=mean),
+    y=hwy
+    )
+  ) + 
+  coord_flip()
+```
+
+
+
+
+
+
+
+
+
+
+
+
