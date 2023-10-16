@@ -9,6 +9,10 @@ navbar:
     href: about.html
   - text: License
     href: license.html
+  - text: ggplot2
+    href: 1_ggplot2.html
+  - text: exploration
+    href: 5_explorative_data_analysis.html
   right:
   - icon: fab fa-github
     text: Source code
