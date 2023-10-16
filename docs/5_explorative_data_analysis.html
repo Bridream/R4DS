@@ -339,6 +339,12 @@ div.tocify {
 <li>
   <a href="license.html">License</a>
 </li>
+<li>
+  <a href="1_ggplot2.html">ggplot2</a>
+</li>
+<li>
+  <a href="5_explorative_data_analysis.html">exploration</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -516,15 +522,15 @@ project makes it easier to run your code on other machines.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomBridreamR4DStreefaa4f4a964ec5eb31413da9465579f00cc802027targetblankfaa4f4aa">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomBridreamR4DStreea1bbc0e1b86b7465bdfe19a95a726ccff7af816btargetblanka1bbc0ea">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/Bridream/R4DS/tree/faa4f4a964ec5eb31413da9465579f00cc802027" target="_blank">faa4f4a</a>
+<a href="https://github.com/Bridream/R4DS/tree/a1bbc0e1b86b7465bdfe19a95a726ccff7af816b" target="_blank">a1bbc0e</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomBridreamR4DStreefaa4f4a964ec5eb31413da9465579f00cc802027targetblankfaa4f4aa"
+id="strongRepositoryversionstrongahrefhttpsgithubcomBridreamR4DStreea1bbc0e1b86b7465bdfe19a95a726ccff7af816btargetblanka1bbc0ea"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -534,7 +540,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/Bridream/R4DS/tree/faa4f4a964ec5eb31413da9465579f00cc802027" target="_blank">faa4f4a</a>.
+<a href="https://github.com/Bridream/R4DS/tree/a1bbc0e1b86b7465bdfe19a95a726ccff7af816b" target="_blank">a1bbc0e</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -603,6 +609,23 @@ Message
 <tbody>
 <tr>
 <td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/Bridream/R4DS/ac9260127b103ae1b2442e1829790834c30a82b8/docs/5_explorative_data_analysis.html" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
 Rmd
 </td>
 <td>
@@ -665,14 +688,125 @@ Adding analysis files
 <pre class="r"><code>ggplot(diamonds, mapping=aes(x=cut, y=price)) + 
   geom_boxplot(outlier.size = 0.2, outlier.alpha = 0.05, outlier.colour = &#39;red&#39;)</code></pre>
 <p><img src="figure/5_explorative_data_analysis.Rmd/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-4-1">
+Past versions of unnamed-chunk-4-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-4-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/Bridream/R4DS/blob/ac9260127b103ae1b2442e1829790834c30a82b8/docs/figure/5_explorative_data_analysis.Rmd/unnamed-chunk-4-1.png" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>ggplot(diamonds) + 
   geom_point(mapping=aes(x=carat, y=price, color=cut), size=0.5, alpha=1) + 
   scale_color_brewer(type=seq, palette=&#39;YlGnBu&#39;, direction=-1) + 
   guides(color=guide_legend(override.aes=list(alpha=1, size=2)))</code></pre>
 <p><img src="figure/5_explorative_data_analysis.Rmd/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-5-1">
+Past versions of unnamed-chunk-5-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-5-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/Bridream/R4DS/blob/ac9260127b103ae1b2442e1829790834c30a82b8/docs/figure/5_explorative_data_analysis.Rmd/unnamed-chunk-5-1.png" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>ggplot(diamonds, mapping=aes(x=cut, y=carat)) + 
   geom_boxplot(outlier.size = 0.2, outlier.alpha = 0.5, outlier.colour = &#39;red&#39;)</code></pre>
 <p><img src="figure/5_explorative_data_analysis.Rmd/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-6-1">
+Past versions of unnamed-chunk-6-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-6-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/Bridream/R4DS/blob/ac9260127b103ae1b2442e1829790834c30a82b8/docs/figure/5_explorative_data_analysis.Rmd/unnamed-chunk-6-1.png" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>diamonds_carat_range&lt;-mutate(
   diamonds,
   carat_range=cut_width(diamonds$carat, center=0.7, width=1, closed = &#39;left&#39;),
@@ -708,6 +842,43 @@ Adding analysis files
   facet_wrap(facets = vars(carat_range), ncol=2, shrink = FALSE, scales = &#39;free&#39;, labeller = &#39;label_both&#39;) + 
   coord_flip()</code></pre>
 <p><img src="figure/5_explorative_data_analysis.Rmd/unnamed-chunk-8-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-8-1">
+Past versions of unnamed-chunk-8-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-8-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/Bridream/R4DS/blob/ac9260127b103ae1b2442e1829790834c30a82b8/docs/figure/5_explorative_data_analysis.Rmd/unnamed-chunk-8-1.png" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>diamonds_small&lt;-filter(diamonds_carat_range, carat_range==&#39;[0.2,1.2)&#39;)
 
 diamonds_small_carat_range&lt;-mutate(
@@ -719,14 +890,125 @@ diamonds_small_carat_range&lt;-mutate(
   facet_wrap(facets = vars(small_carat_range), ncol=2, shrink = FALSE, scales = &#39;free&#39;, labeller = &#39;label_both&#39;) + 
   coord_flip()</code></pre>
 <p><img src="figure/5_explorative_data_analysis.Rmd/unnamed-chunk-10-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-10-1">
+Past versions of unnamed-chunk-10-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-10-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/Bridream/R4DS/blob/ac9260127b103ae1b2442e1829790834c30a82b8/docs/figure/5_explorative_data_analysis.Rmd/unnamed-chunk-10-1.png" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>diamonds_big_carat_range&lt;-filter(diamonds_carat_range, carat_range==&#39;[3.2,4.2)&#39; | carat_range==&#39;[4.2,5.2)&#39;)
 
 ggplot(diamonds_big_carat_range, mapping=aes(x=cut, y=price)) + 
   geom_boxplot()</code></pre>
 <p><img src="figure/5_explorative_data_analysis.Rmd/unnamed-chunk-11-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-11-1">
+Past versions of unnamed-chunk-11-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-11-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/Bridream/R4DS/blob/ac9260127b103ae1b2442e1829790834c30a82b8/docs/figure/5_explorative_data_analysis.Rmd/unnamed-chunk-11-1.png" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>ggplot(diamonds_big_carat_range, mapping=aes(x=cut, y=carat)) + 
   geom_boxplot(outlier.size = 0.2, outlier.alpha = 0.5, outlier.colour = &#39;red&#39;)</code></pre>
 <p><img src="figure/5_explorative_data_analysis.Rmd/unnamed-chunk-12-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-12-1">
+Past versions of unnamed-chunk-12-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-12-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/Bridream/R4DS/blob/ac9260127b103ae1b2442e1829790834c30a82b8/docs/figure/5_explorative_data_analysis.Rmd/unnamed-chunk-12-1.png" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>ggplot(mpg) + 
   geom_boxplot(mapping=aes(
     x=reorder(class, hwy, FUN=mean),
@@ -735,6 +1017,43 @@ ggplot(diamonds_big_carat_range, mapping=aes(x=cut, y=price)) +
   ) + 
   coord_flip()</code></pre>
 <p><img src="figure/5_explorative_data_analysis.Rmd/unnamed-chunk-13-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-13-1">
+Past versions of unnamed-chunk-13-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-13-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/Bridream/R4DS/blob/ac9260127b103ae1b2442e1829790834c30a82b8/docs/figure/5_explorative_data_analysis.Rmd/unnamed-chunk-13-1.png" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">

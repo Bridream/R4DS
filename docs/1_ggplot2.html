@@ -340,6 +340,12 @@ div.tocify {
 <li>
   <a href="license.html">License</a>
 </li>
+<li>
+  <a href="1_ggplot2.html">ggplot2</a>
+</li>
+<li>
+  <a href="5_explorative_data_analysis.html">exploration</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -519,15 +525,15 @@ project makes it easier to run your code on other machines.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomBridreamR4DStreefaa4f4a964ec5eb31413da9465579f00cc802027targetblankfaa4f4aa">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomBridreamR4DStreea1bbc0e1b86b7465bdfe19a95a726ccff7af816btargetblanka1bbc0ea">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/Bridream/R4DS/tree/faa4f4a964ec5eb31413da9465579f00cc802027" target="_blank">faa4f4a</a>
+<a href="https://github.com/Bridream/R4DS/tree/a1bbc0e1b86b7465bdfe19a95a726ccff7af816b" target="_blank">a1bbc0e</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomBridreamR4DStreefaa4f4a964ec5eb31413da9465579f00cc802027targetblankfaa4f4aa"
+id="strongRepositoryversionstrongahrefhttpsgithubcomBridreamR4DStreea1bbc0e1b86b7465bdfe19a95a726ccff7af816btargetblanka1bbc0ea"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -537,7 +543,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/Bridream/R4DS/tree/faa4f4a964ec5eb31413da9465579f00cc802027" target="_blank">faa4f4a</a>.
+<a href="https://github.com/Bridream/R4DS/tree/a1bbc0e1b86b7465bdfe19a95a726ccff7af816b" target="_blank">a1bbc0e</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -605,6 +611,23 @@ Message
 <tbody>
 <tr>
 <td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/Bridream/R4DS/ac9260127b103ae1b2442e1829790834c30a82b8/docs/1_ggplot2.html" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
 Rmd
 </td>
 <td>
@@ -661,19 +684,167 @@ Adding analysis files
 <pre class="r"><code>ggplot(data=mpg)+
   geom_point(mapping=aes(x=displ, y=hwy, colour=class, shape=displ&lt;5), size=2)</code></pre>
 <p><img src="figure/1_ggplot2.Rmd/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-2-1">
+Past versions of unnamed-chunk-2-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-2-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/Bridream/R4DS/blob/ac9260127b103ae1b2442e1829790834c30a82b8/docs/figure/1_ggplot2.Rmd/unnamed-chunk-2-1.png" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy), colour=&#39;red&#39;, size=1.5, shape=20) + 
   facet_grid(drv ~ cyl)</code></pre>
 <p><img src="figure/1_ggplot2.Rmd/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-3-1">
+Past versions of unnamed-chunk-3-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-3-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/Bridream/R4DS/blob/ac9260127b103ae1b2442e1829790834c30a82b8/docs/figure/1_ggplot2.Rmd/unnamed-chunk-3-1.png" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>ggplot(data=mpg) + 
   geom_smooth(mapping=aes(x=displ, y=hwy, linetype=drv))</code></pre>
 <pre><code>`geom_smooth()` using method = &#39;loess&#39; and formula = &#39;y ~ x&#39;</code></pre>
 <p><img src="figure/1_ggplot2.Rmd/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-4-1">
+Past versions of unnamed-chunk-4-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-4-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/Bridream/R4DS/blob/ac9260127b103ae1b2442e1829790834c30a82b8/docs/figure/1_ggplot2.Rmd/unnamed-chunk-4-1.png" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>ggplot(mpg, mapping=aes(x=displ, y=hwy)) + 
   geom_point(mapping=aes(color=class), show.legend = FALSE) + 
   geom_smooth(color=&#39;orange&#39;, se=FALSE, linetype=&quot;solid&quot;)</code></pre>
 <pre><code>`geom_smooth()` using method = &#39;loess&#39; and formula = &#39;y ~ x&#39;</code></pre>
 <p><img src="figure/1_ggplot2.Rmd/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-5-1">
+Past versions of unnamed-chunk-5-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-5-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/Bridream/R4DS/blob/ac9260127b103ae1b2442e1829790834c30a82b8/docs/figure/1_ggplot2.Rmd/unnamed-chunk-5-1.png" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 <div id="theme" class="section level1">
 <h1>Theme</h1>
@@ -700,6 +871,43 @@ as background, grid and etc.</p>
 <pre class="r"><code>ggplot(data=diamonds) + 
   geom_bar(mapping=aes(x=cut, fill=clarity))</code></pre>
 <p><img src="figure/1_ggplot2.Rmd/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-7-1">
+Past versions of unnamed-chunk-7-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-7-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/Bridream/R4DS/blob/ac9260127b103ae1b2442e1829790834c30a82b8/docs/figure/1_ggplot2.Rmd/unnamed-chunk-7-1.png" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>#default: stat=&quot;count&quot;, y=..count...</code></pre>
 <pre class="r"><code>ggplot(data=diamonds) + 
   geom_bar(mapping=aes(x=cut, y=..prop.., group=1))</code></pre>
@@ -709,6 +917,43 @@ This warning is displayed once every 8 hours.
 Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
 generated.</code></pre>
 <p><img src="figure/1_ggplot2.Rmd/unnamed-chunk-8-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-8-1">
+Past versions of unnamed-chunk-8-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-8-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/Bridream/R4DS/blob/ac9260127b103ae1b2442e1829790834c30a82b8/docs/figure/1_ggplot2.Rmd/unnamed-chunk-8-1.png" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>#use y to map a particular computed statistic variables. arguments &#39;stat=&quot;prop&quot;&#39; doesn&#39;t work cause there is no stat_prop function.</code></pre>
 <pre class="r"><code>ggplot(data=diamonds) + 
   stat_summary(
@@ -724,6 +969,43 @@ generated.</code></pre>
   )</code></pre>
 <pre><code>Warning: Removed 5 rows containing missing values (`geom_segment()`).</code></pre>
 <p><img src="figure/1_ggplot2.Rmd/unnamed-chunk-9-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-9-1">
+Past versions of unnamed-chunk-9-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-9-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/Bridream/R4DS/blob/ac9260127b103ae1b2442e1829790834c30a82b8/docs/figure/1_ggplot2.Rmd/unnamed-chunk-9-1.png" target="_blank">ac92601</a>
+</td>
+<td>
+Bridream
+</td>
+<td>
+2023-10-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 <div id="position-and-coordinate-system" class="section level1">
 <h1>Position and Coordinate System</h1>
